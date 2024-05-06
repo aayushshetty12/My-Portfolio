@@ -340,7 +340,7 @@ export const projects = [
     title: "RadioX",
     date: "Oct 2023 - Dec 2023",
     description:
-      "RadioX is a state-of-the-art web application aimed at transforming healthcare management. It is designed to enhance the patient experience, streamline administrative tasks, and provide healthcare professionals with efficient tools for patient care.",
+      "RadioX is a state-of-the-art web application aimed at transforming healthcare management. It is designed to enhance the patient experience, streamline administrative tasks, and provide healthcare professionals with efficient tools for patient care. Developed using React, NodeJS, and MongoDB, focusing on creating a user-friendly interface and efficient patient onboarding. Integrated a Dicom viewer into the platform, enabling doctors to analyze scanned images and provide necessary feedback and prescriptions seamlessly. This comprehensive approach aimed to improve the efficiency and effectiveness of radiology imaging diagnosis while prioritizing user experience and security.",
     image: radiox,
     tags: [
       "React",
@@ -380,7 +380,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Cloud Native Web App-Terraform Infra",
+    title: "Cloud Native Web App-Terraform Infrastructure",
     date: "Jan 2024 - April 2024",
     description:
       "Provisioned VPC networks, subnets, firewalls, virtual machines using custom Packer images, and Compute Engine Instances in Google Cloud Platform using Terraform. Cloud DNS was employed for service discovery, Pub/Sub for inter-service messaging, and Cloud Functions for serverless microservices. Deployed SQL database instance within Google's VPC, reachable from the VMs via VPC peering. Customer-managed keys were generated and stored in a key ring, utilized for encrypting VM disks, the SQL instance, and storage bucket containing serverless artifacts. Load balancer and reverse proxy were implemented to auto-scale resources based on user traffic.",
