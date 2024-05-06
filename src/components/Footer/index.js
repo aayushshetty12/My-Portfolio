@@ -100,10 +100,8 @@ function Footer() {
           <NavLink href='#contact'>Contact</NavLink>
         </Nav>
         <SocialMediaIcons>
-          {/* <SocialMediaIcon href={Bio.facebook} target="display"><FacebookIcon /></SocialMediaIcon> */}
           <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
           <SocialMediaIcon href={Bio.github} target="display"><GitHub /></SocialMediaIcon>
-          {/* <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon> */}
         </SocialMediaIcons>
         {/* <Copyright>
           &copy; {new Date().getFullYear()} Aayush Shetty. All rights reserved.

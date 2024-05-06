@@ -16,10 +16,9 @@ export const Bio = {
     "Cloud Enthusiast",
   ],
   description:
-    //"I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   "As a seasoned Software Engineer and Full Stack Developer, I bring close to 3 years of expertise in coding and problem-solving. Proficient in both frontend and backend technologies, I specialize in crafting robust and user-friendly web applications. With a growth mindset and a passion for innovation, I am committed to making impactful contributions to every project I undertake.",
   github: "https://github.com/aayushshetty12",
-  resume: "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
+  resume: "",
   linkedin: "https://www.linkedin.com/in/aayushs12/",
 };
 
@@ -90,11 +89,6 @@ export const skills = [
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
       },
-      // {
-      //   name: "Python",
-      //   image:
-      //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-      // },
       {
         name: "MySQL",
         image:
@@ -108,10 +102,6 @@ export const skills = [
         name: "GraphQL",
         image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
       },
-      // {
-      //   name: "Firebase",
-      //   image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
-      // },
     ],
   },
   {
@@ -145,22 +135,17 @@ export const skills = [
       {
         name: "C++",
         image:
-          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+        "data:image/png;base64,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"
       },
       {
         name: "Java",
         image:
-          "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
-      },
-      {
-        name: "Python",
-        image:
-          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+        "data:image/png;base64,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"
       },
       {
         name: "bash",
         image:
-          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+        "data:image/png;base64,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"
       },
       {
         name: "Git",
@@ -172,16 +157,6 @@ export const skills = [
         image:
           "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
-      // {
-      //   name: "Docker",
-      //   image:
-      //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-      // },
-      // {
-      //   name: "Netlify",
-      //   image:
-      //     "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-      // },
       {
         name: "VS Code",
         image:
@@ -257,49 +232,6 @@ export const experiences = [
       "Bootstrap"
     ],
   },
-  // {
-  //   id: 2,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-  //   role: "Open Source Contributor ",
-  //   company: "GirlScript Summer of Code",
-  //   date: "May 2023 - Present",
-  //   desc: "Contributing to different open-source projects and learn from industry experts",
-  //   doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
-  // },
-  // {
-  //   id: 3,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-  //   role: "Android Developer",
-  //   company: "DSC KIIT",
-  //   date: "Nov2021 - Present",
-  //   desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-  //   skills: [
-  //     "Leadership",
-  //     "Mobile Application Development",
-  //     "Kotlin",
-  //     "XML",
-  //     "Figma",
-  //   ],
-  // },
-  // {
-  //   id: 4,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-  //   role: "Android Developer Intern",
-  //   company: "Rudraksha Welffare Foundation",
-  //   date: "June 2021 - Oct 2021",
-  //   desc: "As an Android Developer Intern at Rudraksha Welfare Foundation from June 2021 to October 2021, I gained valuable hands-on experience in application development. During my tenure, I contributed to the development of the application's back-end cloud functions using Firebase and implemented a front-end with the MVVM structure, which was designed using Figma. I also added a one-to-one video call feature, conceptualized new features, and optimized app performance. This internship helped me enhance my skills in Android development and gave me an opportunity to work in a collaborative team environment.",
-  //   skills: [
-  //     "Android",
-  //     "Java",
-  //     "Kotlin",
-  //     "XML",
-  //     "Node Js",
-  //     "Cloud Firestore",
-  //     "Firebase",
-  //     "Figma",
-  //   ],
-  //   doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-  // },
 ];
 
 export const education = [
@@ -308,7 +240,6 @@ export const education = [
     img: northeastern,
     school: "Northeastern University, Boston, MA",
     date: "Sept 2023 - May 2025",
-    // grade: "8.71 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
     degree: "Master of Science, Information Systems",
     tags: ["Web Design and User Experience Engineering", "Network Structures and Cloud Computing"]
@@ -318,20 +249,10 @@ export const education = [
     img: mumbaiUniversity,
     school: "University of Mumbai, Mumbai, India",
     date: "Aug 2016 - Oct 2020",
-    //grade: "88.2%",
     desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
     degree: "Bachelor of Engineering, Computer Engineering",
     tags: ["Data Structures and Algorithms", "Database Management Systems", "Computer Networks", "Distributed Systems"]
   },
-  // {
-  //   id: 2,
-  //   img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-  //   school: "Methodist School, Dankuni",
-  //   date: "Apr 2017 - Apr 2019",
-  //   grade: "92.3%",
-  //   desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-  //   degree: "ICSC(X), Science with Computer",
-  // },
 ];
 
 export const projects = [
@@ -354,9 +275,7 @@ export const projects = [
       "Stripe",
       "NodeMailer"
     ],
-    category: "web app",
     github: "https://github.com/aayushshetty12/RadioX",
-    //webapp: "https://trackify.duckdns.org",
   },
   {
     id: 1,
@@ -374,9 +293,7 @@ export const projects = [
       "Mailgun",
       "CI/CD"
     ],
-    category: "web app",
     github: "https://github.com/aayushshetty12/Cloud-webapp",
-    //webapp: "https://vexa-app.netlify.app/",
   },
   {
     id: 2,
@@ -398,23 +315,7 @@ export const projects = [
       "Cloud Functions",
       // "Linux"
     ],
-    category: "machine learning",
-    github: "https://github.com/aayushshetty12/Brain-Tumor-Detection",
-    // webapp: "https://brain-tumor.netlify.app/",
-    // member: [
-    //   {
-    //     name: "Aayush Shetty",
-    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    //     github: "https://github.com/aayushshetty12/",
-    //   },
-    //   {
-    //     name: "Upasana Chaudhuri",
-    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-    //     github: "https://github.com/upasana0710",
-    //   },
-    // ],
+    github: "https://github.com/aayushshetty12/Terraform-GCP-Infra",
   },
   {
     id: 3,
@@ -425,92 +326,6 @@ export const projects = [
     image: netflixClone,
     tags: ["React", "Redux", "JavaScript", "CSS", "NodeJS", "ExpressJS", "Responsive", "REST APIs"],
     github: "https://github.com/aayushshetty12/Netflix_clone",
-    webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
   },
-  // {
-  //   id: 10,
-  //   title: "Job Finding App",
-  //   date: "Jun 2023 - Jul 2023",
-  //   description:
-  //     "A Job Finding App made with React Native, Axios. Users can search for any job coming from API and apply there.",
-  //   image:
-  //     "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
-  //   tags: ["React Native", "JavaScript", "Axios"],
-  //   category: "android app",
-  //   github: "https://github.com/aayushshetty12/Job-finder-App",
-  //   webapp: "https://github.com/aayushshetty12/Job-finder-App",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Whatsapp Clone",
-  //   date: "Jul 2021",
-  //   description:
-  //     "A WhatsApp clone made with React JS, Firebase, and Material UI. It has Phone Authentication, Real-time Database. It has a chat room where users can chat with each other. It has a sidebar where users can see all the chat rooms and can create a new chat room. It has a login page where users can log in with their Google account.",
-  //   image:
-  //     "https://firebasestorage.googleapis.com/v0/b/whatsapp-clone-rishav.appspot.com/o/Screenshot%20(151).png?alt=media&token=48391593-1ef0-4a8c-a92a-eb82bdf38e89",
-  //   tags: ["React Js", "Firebase", "Firestore", "Node JS"],
-  //   category: "web app",
-  //   github: "https://github.com/aayushshetty12/Whatsapp-Clone-React-Js",
-  //   webapp: "https://whatsapp-clone-rishav.web.app",
-  // },
-  // {
-  //   id: 5,
-  //   title: "Todo Web App",
-  //   date: "Jun 2021",
-  //   description:
-  //     " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
-  //   image:
-  //     "https://camo.githubusercontent.com/a328255ad96f861f57d25096d28018ab2656c689a1456b0d145764009bed2d1a/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f74253230283938292e706e673f616c743d6d6564696126746f6b656e3d33643335646366322d626666322d343730382d393031632d343232383866383332386633",
-  //   tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
-  //   category: "web app",
-  //   github: "https://github.com/aayushshetty12/Todo-Web-App",
-  //   webapp: "https://rishav-react-todo.netlify.app/",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Breaking Bad",
-  //   date: "Jun 2021",
-  //   description:
-  //     "A simple react app that shows the characters of the famous TV series Breaking Bad. It uses the Breaking Bad API to fetch the data. It also has a search bar to search for a particular character.",
-  //   image:
-  //     "https://camo.githubusercontent.com/cd07010cbeb90cb1b43a5d6162784326aef02210ef7d41a0f9ae043b3e392378/68747470733a2f2f666972656261736573746f726167652e676f6f676c65617069732e636f6d2f76302f622f746f646f2d6170702d63386331392e61707073706f742e636f6d2f6f2f53637265656e73686f7425323028313534292e706e673f616c743d6d6564696126746f6b656e3d65613439383630632d303435362d343333342d616435372d336239346663303333363263",
-  //   tags: ["React Js", "API", "Axios", "Node JS"],
-  //   category: "web app",
-  //   github: "https://github.com/aayushshetty12/Breaking-Bad",
-  //   webapp: "https://breaking-bad-webapp.netlify.app",
-  // },
-  // {
-  //   id: 7,
-  //   title: "Quiz App",
-  //   date: "Dec 2020 - Jan 2021",
-  //   description:
-  //     "A android quiz app made with Java and Firebase. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the quiz categories and can create a new quiz. It has a leaderboard where users can see the top 10 scorers. It has a search bar where users can search for a particular quiz.",
-  //   image:
-  //     "https://github-production-user-asset-6210df.s3.amazonaws.com/64485885/239726262-c1b061d1-d9d0-42ef-9f1c-0412d14bc4f6.gif",
-  //   tags: ["Java", "Android Studio", "Firebase", "Google Auth"],
-  //   category: "android app",
-  //   github: "https://github.com/aayushshetty12/Quiz-Earn",
-  //   webapp: "https://github.com/aayushshetty12/Quiz-Earn",
-  // },
-  // {
-  //   id: 8,
-  //   title: "Face Recognition",
-  //   date: "Jan 2021",
-  //   description:
-  //     "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-  //   image:
-  //     "https://camo.githubusercontent.com/a8b3e1ebf26d4c95f75bc6671189a3590eb67eb8332d7c7452492990e731efb9/68747470733a2f2f77617265686f7573652d63616d6f2e696e67726573732e636d68312e707366686f737465642e6f72672f356137383335396561323762643261633232336437656662306639303831306437373930383436312f363837343734373037333361326632663633366336663735363432653637363937343638373536323735373336353732363336663665373436353665373432653633366636643266363137333733363537343733326633383339333633363339333232663332333433343333333033333339333832663333333636363330363533333636333032643331333336333632326433313331363533373264333833323335333832643334363433303633333936333635333136353334333133393265363736393636",
-  //   tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-  //   category: "machine learning",
-  //   github: "https://github.com/aayushshetty12/Face-Recodnition-AI-with-Python",
-  //   webapp: "https://github.com/aayushshetty12/Face-Recodnition-AI-with-Python",
-  // },
 ];
 
-// export const TimeLineData = [
-//   { year: 2017, text: "Started my journey" },
-//   { year: 2018, text: "Worked as a freelance developer" },
-//   { year: 2019, text: "Founded JavaScript Mastery" },
-//   { year: 2020, text: "Shared my projects with the world" },
-//   { year: 2021, text: "Started my own platform" },
-// ];
