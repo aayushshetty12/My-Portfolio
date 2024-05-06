@@ -158,11 +158,6 @@ export const skills = [
           "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
       },
       {
-        name: "SQL",
-        image:
-          "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
-      },
-      {
         name: "bash",
         image:
           "https://camo.githubusercontent.com/ed93c2b000a76ceaad1503e7eb9356591b885227e82a36a005b9d3498b303ba5/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
@@ -217,7 +212,8 @@ export const experiences = [
       "JavaScript ES6",
       "REST API Design",
       "MongoDB",
-      "Node.js",
+      "NodeJS",
+      "ExpressJS",
       "TypeScript",
       "React",
       "Redux",
@@ -230,13 +226,14 @@ export const experiences = [
     role: "Software Development Engineer",
     company: "Jio Platforms Limited, India",
     date: "Nov 2020 - Jul 2023",
-    desc: "sdf",
+    desc: "At Jio Platforms Limited, I worked as a Software Development Engineer for the Supply Chain Management team, which oversaw the logistics of the company throughout the country. I developed multiple web applications using JavaScript, React, Redux, NodeJS, ExpressJS, and MongoDB, resulting in a 35% increase in our internal operating efficiency. Additionally, I personally reduced manual data entry by 50% and improved data accuracy by 30% through automation efforts. Furthermore, I optimized the user experience by mitigating page loading time by 20% and increasing click-through rates by 30%. I also took charge of diagnosing and resolving web application bugs and issues to maintain an error-free user experience, consequently reducing support requests by 15%. Collaborating closely with cross-functional teams, I operated within an Agile environment using SCRUM methodology to ensure the seamless integration of frontend and backend components, effectively minimizing integration issues by 25%.",
     skills: [
       "React",
       "Redux",
       "NodeJS",
       "ExpressJS",
       "REST API",
+      "Redis",
       "MongoDB",
       "Material UI",
       "HTML",
@@ -244,7 +241,6 @@ export const experiences = [
       "JavaScript",
       "TypeScript"
     ],
-    //doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
   },
   {
     id: 2,
@@ -252,7 +248,7 @@ export const experiences = [
     role: "Web Development Intern",
     company: "Sahu Technologies, India",
     date: "Jan 2019 - Feb 2019",
-    desc: "During my ",
+    desc: "While interning as a Web Development Intern at Sahu Technologies, I collaborated with my mentor in developing the front-end of an e-commerce website using React, CSS, JavaScript, and Bootstrap. Additionally, I delivered a products-list page with interactive features, enabling users to seamlessly browse and add items to their carts, which resulted in a 40% increase in average order value. Furthermore, I successfully resolved 18 bugs related to user interface and functionality, achieving a 20% increase in user satisfaction based on post-bug-fix user feedback surveys. ",
     skills: [
       "HTML",
       "CSS",
@@ -367,7 +363,7 @@ export const projects = [
     title: "Cloud Native Web App",
     date: "Jan 2024 - April 2024",
     description:
-      "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
+      "Designed a cloud-native application using NodeJS and MySQL in accordance with the 12-factor app methodology. To automate the build, test, and deployment processes, I implemented GitHub Actions, enabling CI/CD. Additionally, I utilized Packer to containerize applications in custom images, which included all necessary dependencies. This resulted in the app, following a microservices architecture, being started automatically when Google Compute Engine (GCE) instances are launched.",
     image: cloudApp,
     tags: [
       "NodeJS",
@@ -387,19 +383,19 @@ export const projects = [
     title: "Cloud Native Web App-Terraform Infra",
     date: "Jan 2024 - April 2024",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
+      "Provisioned VPC networks, subnets, firewalls, virtual machines using custom Packer images, and Compute Engine Instances in Google Cloud Platform using Terraform. Cloud DNS was employed for service discovery, Pub/Sub for inter-service messaging, and Cloud Functions for serverless microservices. Deployed SQL database instance within Google's VPC, reachable from the VMs via VPC peering. Customer-managed keys were generated and stored in a key ring, utilized for encrypting VM disks, the SQL instance, and storage bucket containing serverless artifacts. Load balancer and reverse proxy were implemented to auto-scale resources based on user traffic.",
     image: cloudInfra,
     tags: [
-      "Google Cloud Platform(GCP)",
+      "Google Cloud",
       "Terraform", 
       "VPC", 
       "VM", 
-      "Images", 
+      "DNS", 
       "Load Balancer",
       "Auto Scaling", 
       "Firewalls", 
       "Cloud SQL",
-      // "CI/CD",
+      "Cloud Functions",
       // "Linux"
     ],
     category: "machine learning",
@@ -425,9 +421,9 @@ export const projects = [
     title: "Netflix Clone",
     date: "Jul 2020 - Sep 2020",
     description:
-      "App Is Currently In Playstore 100+ Downloads. This Project proposes an “Expense Tracking App”. Keep track of your personal expenses and compare them to your monthly income with the budget planner. It has Google Drive Cloud API for Backup of User Room Database. Made with Kotlin in MVVM Architecture & Live Data.",
+      "Developed Netflix Clone by leveraging React and Redux to develop a responsive web application aimed at implementing a user-friendly user interface and enhancing the overall experience with animations and interactivity. Additionally, I implemented custom REST APIs to retrieve real-time data on movies and TV shows, utilizing NodeJS and ExpressJS on the backend to ensure efficient handling of data requests.",
     image: netflixClone,
-    tags: ["React", "Redux", "JavaScript", "CSS", "Responsive", "REST APIs"],
+    tags: ["React", "Redux", "JavaScript", "CSS", "NodeJS", "ExpressJS", "Responsive", "REST APIs"],
     github: "https://github.com/aayushshetty12/Netflix_clone",
     webapp: "https://play.google.com/store/apps/details?id=com.rishav.buckoid",
   },
