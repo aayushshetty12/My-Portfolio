@@ -201,14 +201,13 @@ export const experiences = [
     role: "Software Development Engineer",
     company: "Jio Platforms Limited, India",
     date: "Nov 2020 - Jul 2023",
-    desc: "At Jio Platforms Limited, I worked as a Software Development Engineer for the Supply Chain Management team, which oversaw the logistics of the company throughout the country. I developed multiple web applications using JavaScript, React, Redux, NodeJS, ExpressJS, and MongoDB, resulting in a 35% increase in our internal operating efficiency. Additionally, I personally reduced manual data entry by 50% and improved data accuracy by 30% through automation efforts. Furthermore, I optimized the user experience by mitigating page loading time by 20% and increasing click-through rates by 30%. I also took charge of diagnosing and resolving web application bugs and issues to maintain an error-free user experience, consequently reducing support requests by 15%. Collaborating closely with cross-functional teams, I operated within an Agile environment using SCRUM methodology to ensure the seamless integration of frontend and backend components, effectively minimizing integration issues by 25%.",
+    desc: "At Jio Platforms Limited, I worked as a Software Development Engineer for the Supply Chain Management team, which oversaw the logistics of the company throughout the country. I spearheaded SCM platform development using React, Redux, JavaScript, and TypeScript, automating workflows to cut manual operations time from 4 hours to 5 minutes. Additionally, I developed REST APIs using Node.js and Express, integrating JWT and OAuth 2.0 for secure authentication and authorization, reducing API authentication latency by 45%. Furthermore, I optimized the user experience by mitigating page loading time by 20% and increasing click-through rates by 30%. I also took charge of diagnosing and resolving web application bugs and issues to maintain an error-free user experience, consequently reducing support requests by 15%. Collaborating closely with cross-functional teams, I operated within an Agile environment using SCRUM methodology to ensure the seamless integration of frontend and backend components, effectively minimizing integration issues by 25%. Containerized microservices using Docker and automated CI/CD pipelines with GitLab, streamlining testing and deployment processes, reducing deployment errors by 40% and ensuring seamless deployments on AWS.",
     skills: [
       "React",
       "Redux",
       "NodeJS",
       "ExpressJS",
       "REST API",
-      "Redis",
       "MongoDB",
       "Material UI",
       "HTML",
@@ -223,7 +222,7 @@ export const experiences = [
     role: "Web Development Intern",
     company: "Sahu Technologies, India",
     date: "Jan 2019 - Feb 2019",
-    desc: "While interning as a Web Development Intern at Sahu Technologies, I collaborated with my mentor in developing the front-end of an e-commerce website using React, CSS, JavaScript, and Bootstrap. Additionally, I delivered a products-list page with interactive features, enabling users to seamlessly browse and add items to their carts, which resulted in a 40% increase in average order value. Furthermore, I successfully resolved 18 bugs related to user interface and functionality, achieving a 20% increase in user satisfaction based on post-bug-fix user feedback surveys. ",
+    desc: "While interning as a Web Development Intern at Sahu Technologies, I collaborated with my mentor in developing the front-end of an e-commerce website using React, CSS, JavaScript, and Bootstrap. Additionally, I delivered a products-list page with interactive features, enabling users to seamlessly browse and add items to their carts, which resulted in a 40% increase in average order value. Furthermore, I successfully resolved 18 bugs related to user interface and functionality, achieving a 20% increase in user satisfaction based on post-bug-fix user feedback surveys. Integrated Java Spring Boot REST APIs to enable personalized product recommendations and real-time stock updates, cutting customer support queries about stock availability by 95%.",
     skills: [
       "HTML",
       "CSS",
@@ -242,7 +241,7 @@ export const education = [
     date: "Sept 2023 - May 2025",
     desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
     degree: "Master of Science, Information Systems",
-    tags: ["Web Design and User Experience Engineering", "Network Structures and Cloud Computing"]
+    tags: ["Web Design and User Experience Engineering", "Network Structures and Cloud Computing", "Object Oriented Programming with Java", "Agile Software Development"]
   },
   {
     id: 1,
@@ -269,7 +268,6 @@ export const projects = [
       "NodeJS",
       "ExpressJS",
       "MongoDB", 
-      "Amazon Web Services(AWS)",
       "Sass",
       "Jest",
       "Stripe",
