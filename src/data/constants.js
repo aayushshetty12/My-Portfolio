@@ -181,19 +181,15 @@ export const experiences = [
     date: "Jul 2025 - Present",
     desc: "Developed 10+ WCAG-compliant UI components using React, JavaScript, and Redux with theming capabilities via Storybook. Built backend with Node.js, GraphQL, and MongoDB, reducing query response time by 35% via optimized schema design. Participated in regular code reviews and pair programming sessions, promoting collaboration and improving code quality by 20%.",
     skills: [
-      "HTTP",
-      "HTML5",
-      "CSS3",
-      "SCSS",
-      "JavaScript ES6",
-      "REST API Design",
+      "React",
+      "Redux",
+      "JavaScript",
+      "GraphQL",
       "MongoDB",
       "NodeJS",
       "ExpressJS",
       "TypeScript",
-      "React",
-      "Redux",
-      "PWA"   
+      "D3.js"  
     ],
   },
   {
