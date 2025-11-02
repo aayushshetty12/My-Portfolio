@@ -1,5 +1,6 @@
 import northeastern from "../images/northeastern.png"
 import mumbaiUniversity from "../images/mumbaiUniversity.jpeg"
+import ocg from "../images/ocg.png"
 import jio from "../images/jio.png"
 import sahu from "../images/sahu.jpeg"
 import radiox from "../images/radiox.jpg"
@@ -174,11 +175,11 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: northeastern,
-    role: "Graduate Teaching Assistant",
-    company: "Northeastern University, Boston, MA",
-    date: "May 2024 - Present",
-    desc: "As a Graduate Teaching Assistant, I collaborated closely with the professor to structure assignments effectively, ensuring alignment with course objectives and providing students with meaningful learning experiences. This collaboration was crucial in maintaining a productive and engaging learning atmosphere. Additionally, I actively mentored students, overseeing lectures, assignments, and assessments. I conducted personalized 1-on-1 sessions with students to monitor their progress and address any questions they had regarding assignments and concepts. Moreover, I proctored assessments and examinations to evaluate their comprehension of the course material.",
+    img: ocg,
+    role: "Software Engineer",
+    company: "One Community Global, USA",
+    date: "Jul 2025 - Present",
+    desc: "Developed 10+ WCAG-compliant UI components using React, JavaScript, and Redux with theming capabilities via Storybook. Built backend with Node.js, GraphQL, and MongoDB, reducing query response time by 35% via optimized schema design. Participated in regular code reviews and pair programming sessions, promoting collaboration and improving code quality by 20%.",
     skills: [
       "HTTP",
       "HTML5",
@@ -197,11 +198,34 @@ export const experiences = [
   },
   {
     id: 1,
+    img: northeastern,
+    role: "Lead Graduate Teaching Assistant",
+    company: "Northeastern University, USA",
+    date: "May 2024 - Dec 2024",
+    desc: "Supervised and coordinated a team of 5 Teaching Assistants, designing and conducting interactive lab workshops for over 150 students on full-stack web development using JavaScript, React, and Node.js. Delivered personalized technical mentorship and in-depth project feedback, enhancing students’ proficiency in frontend frameworks, backend APIs, and software engineering best practices.",
+    skills: [
+      "HTTP",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "JavaScript ES6",
+      "REST API Design",
+      "MongoDB",
+      "NodeJS",
+      "ExpressJS",
+      "TypeScript",
+      "React",
+      "Redux",
+      "PWA"   
+    ],
+  },
+  {
+    id: 2,
     img: jio,
     role: "Software Development Engineer",
     company: "Jio Platforms Limited, India",
     date: "Nov 2020 - Jul 2023",
-    desc: "At Jio Platforms Limited, I worked as a Software Development Engineer for the Supply Chain Management team, which oversaw the logistics of the company throughout the country. I spearheaded SCM platform development using React, Redux, JavaScript, and TypeScript, automating workflows to cut manual operations time from 4 hours to 5 minutes. Additionally, I developed REST APIs using Node.js and Express, integrating JWT and OAuth 2.0 for secure authentication and authorization, reducing API authentication latency by 45%. Furthermore, I optimized the user experience by mitigating page loading time by 20% and increasing click-through rates by 30%. I also took charge of diagnosing and resolving web application bugs and issues to maintain an error-free user experience, consequently reducing support requests by 15%. Collaborating closely with cross-functional teams, I operated within an Agile environment using SCRUM methodology to ensure the seamless integration of frontend and backend components, effectively minimizing integration issues by 25%. Containerized microservices using Docker and automated CI/CD pipelines with GitLab, streamlining testing and deployment processes, reducing deployment errors by 40% and ensuring seamless deployments on AWS.",
+    desc: "Spearheaded Supply Chain Management (SCM) platform development using React, Redux, TypeScript, and Tailwind, automating manual workflows and accelerating processing time from 4 hours to 5 minutes. Designed REST APIs using Node.js and Express.js, integrating OAuth 2.0 with JWT-based tokens for secure authorization and token validation to reduce authentication latency by 30%. Optimized browser performance by implementing performance tuning techniques such as lazy loading and pagination, improving application load times by 25%. Achieved 80% code coverage and upheld high code quality by using Jest and React Testing Library to identify and resolve bugs. Collaborated cross-functionally with 3 teams using Jira and Scrum to migrate legacy applications to a modern React-based architecture, boosting performance and reducing operational costs by 35%. Containerized microservices with Docker and automated CI/CD pipelines via Jenkins, reducing post-release issues by 40% and enabling seamless, scalable deployments on AWS.",
     skills: [
       "React",
       "Redux",
@@ -213,22 +237,30 @@ export const experiences = [
       "HTML",
       "CSS",
       "JavaScript",
-      "TypeScript"
+      "TypeScript",
+      "Docker",
+      "CI/CD",
+      "Jest",
+      "Jenkins",
+      "AWS"
     ],
   },
   {
-    id: 2,
+    id: 3,
     img: sahu,
     role: "Web Development Intern",
     company: "Sahu Technologies, India",
     date: "Jan 2019 - Feb 2019",
-    desc: "While interning as a Web Development Intern at Sahu Technologies, I collaborated with my mentor in developing the front-end of an e-commerce website using React, CSS, JavaScript, and Bootstrap. Additionally, I delivered a products-list page with interactive features, enabling users to seamlessly browse and add items to their carts, which resulted in a 40% increase in average order value. Furthermore, I successfully resolved 18 bugs related to user interface and functionality, achieving a 20% increase in user satisfaction based on post-bug-fix user feedback surveys. Integrated Java Spring Boot REST APIs to enable personalized product recommendations and real-time stock updates, cutting customer support queries about stock availability by 95%.",
+    desc: "Developed REST APIs with Spring Boot and MySQL to enhance e-commerce features like personalized product recommendations and real-time stock updates, reducing customer support queries for stock availability by 95%. Crafted responsive product listing interfaces using HTML, CSS, JavaScript, and Bootstrap, improving mobile view compatibility across 5+ screen sizes using media queries and CSS optimizations, and resolving 40+ UI bugs for enhanced user experience.",
     skills: [
       "HTML",
       "CSS",
       "JavaScript",
       "Material UI",
-      "Bootstrap"
+      "Bootstrap",
+      "Spring Boot",
+      "MySQL",
+      "REST API"
     ],
   },
 ];
@@ -239,8 +271,7 @@ export const education = [
     img: northeastern,
     school: "Northeastern University, Boston, MA",
     date: "Sept 2023 - May 2025",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-    degree: "Master of Science, Information Systems",
+    degree: "Master of Science, Computer Software Engineering",
     tags: ["Web Design and User Experience Engineering", "Network Structures and Cloud Computing", "Object Oriented Programming with Java", "Agile Software Development"]
   },
   {
@@ -248,7 +279,6 @@ export const education = [
     img: mumbaiUniversity,
     school: "University of Mumbai, Mumbai, India",
     date: "Aug 2016 - Oct 2020",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
     degree: "Bachelor of Engineering, Computer Engineering",
     tags: ["Data Structures and Algorithms", "Database Management Systems", "Computer Networks", "Distributed Systems"]
   },

@@ -25,12 +25,28 @@ const Description = styled.div`
 `
 
 const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding-left: 1.5em;
+    line-height: 1.5;
+    margin-bottom: 0.5em;
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0.4em;
+        top: 0.6em;
+        width: 6px;
+        height: 6px;
+        background-color: ${({ theme }) => theme.text_primary + 99};
+        border-radius: 50%;
+    }
 `
 
 const Card = styled.div`
@@ -156,9 +172,9 @@ const ExperienceCard = ({ experience }) => {
                 </Body>
             </Top>
             <Description>
-                {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
-
+                {experience?.desc && experience.desc.split('. ').map((point, i, points) => {
+                    return point.length > 0 ? <Span>{point}{i < points.length - 1 ? '.' : ''}</Span> : null
+                    })
                 }
                 {experience?.skills &&
                     <>
